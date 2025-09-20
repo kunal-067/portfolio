@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { motion } from "framer-motion";
 import {
@@ -6,7 +7,7 @@ import {
   Instagram,
   MessageSquare,
 } from "lucide-react";
-import {SOCIAL} from '@/lib/socials.js'
+import {SOCIAL} from '@/lib/socials'
 
 const Hero = () => {
   return (

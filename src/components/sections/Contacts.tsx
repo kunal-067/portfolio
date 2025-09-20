@@ -7,7 +7,7 @@ import {
   Phone,
   MessageSquare,
 } from "lucide-react";
-import {SOCIAL} from '@/lib/socials.js'
+import {SOCIAL} from '@/lib/socials'
 
 const Contacts = () => {
   return (

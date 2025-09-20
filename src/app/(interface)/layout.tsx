@@ -1,10 +1,8 @@
-import type { Metadata } from "next";
 import React from 'react'
-import Home from './(interface)/home/page'
 import NavBar from '@/components/NavBar'
 
 // Define metadata for SEO
-export const metadata:Metadata = {
+export const metadata = {
     title: 'Kunal Shroff - Web & App Developer | Next.js, E-Commerce, Microservices',
     description: 'Hire Kunal Shroff, an expert web developer specializing in Next.js, e-commerce, app development, API development, and microservices. Build fast, SEO-friendly apps with MongoDB, Express, and more.',
     keywords: [
@@ -89,17 +87,26 @@ const schemaMarkup = {
     ],
 };
 
-const HomePage = () => {
-  return (
-    <>
-    <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
-        />
-      <NavBar />
-      <Home />
-    </>
-  )
+
+const layout = ({ children }) => {
+    return (
+        <>
+            {/* Schema Markup */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+            />
+
+            <main className="min-h-screen bg-white dark:bg-gradient-to-br dark:from-black dark:via-gray-900 dark:to-black text-slate-900 dark:text-white transition-colors duration-300">
+                <NavBar />
+                {children}
+                <footer className="mt-12 text-center py-8 text-sm text-gray-500">
+                    © {new Date().getFullYear()} Kunal Shroff — Built with Next.js & Tailwind CSS
+                </footer>
+            </main>
+
+        </>
+    )
 }
 
-export default HomePage
+export default layout
