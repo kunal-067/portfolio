@@ -3,7 +3,7 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 
 // Lazy-load non-critical components
-import Hero from '@/components/sections/Hero';
+import Hero, { Hero2 } from '@/components/sections/Hero';
 const Skills = dynamic(() => import('@/components/sections/Skills'), { ssr: true });
 const Projects = dynamic(() => import('@/components/sections/Projects'), { ssr: true });
 const About = dynamic(() => import('@/components/sections/About'), { ssr: true });
@@ -110,7 +110,8 @@ export default function Home() {
             />
 
             {/* Hero Section */}
-            <Hero/>
+            {/* <Hero/> */}
+            <Hero2/>
 
             {/* Skills Section */}
             <Skills/>
