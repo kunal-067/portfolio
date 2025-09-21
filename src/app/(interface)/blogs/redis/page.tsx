@@ -47,7 +47,7 @@ export default function RedisBlog() {
 GET user:1`}
                     </pre>
                     <p>
-                        This stores "Kunal" under the key <code>user:1</code> and lets you retrieve it instantly.
+                        This stores {`"Kunal"`} under the key <code>user:1</code> and lets you retrieve it instantly.
                     </p>
 
                     <p>Redis supports many data types:</p>
@@ -192,13 +192,13 @@ runExample();`}
                 🔎 Here:
                 <ul className="list-disc ml-6 mt-2">
                     <li>
-                        <code>set("user:1", "Kunal")</code> → saves a key-value pair in
+                        <code>{`set("user:1", "Kunal")`}</code> → saves a key-value pair in
                         memory.
                     </li>
                     <li>
-                        <code>get("user:1")</code> → fetches it instantly.
+                        <code>{`get("user:1")`}</code> → fetches it instantly.
                     </li>
-                    <li>Output will be <code>"Kunal"</code>.</li>
+                    <li>Output will be <code>{`"Kunal"`}</code>.</li>
                 </ul>
             </div>
 
@@ -219,7 +219,7 @@ console.log(otp); // 👉 "789456"`}
                 🔎 Here:
                 <ul className="list-disc ml-6 mt-2">
                     <li>
-                        <code>setEx("otp:123", 60, "789456")</code> → stores OTP with 60
+                        <code>{`setEx("otp:123", 60, "789456")`}</code> → stores OTP with 60
                         seconds expiry.
                     </li>
                     <li>

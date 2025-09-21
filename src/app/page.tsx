@@ -4,7 +4,7 @@ import Home from './(interface)/home/page'
 import NavBar from '@/components/NavBar'
 
 // Define metadata for SEO
-export const metadata:Metadata = {
+export const metadata: Metadata = {
     title: 'Kunal Shroff - Web & App Developer | Next.js, E-Commerce, Microservices',
     description: 'Hire Kunal Shroff, an expert web developer specializing in Next.js, e-commerce, app development, API development, and microservices. Build fast, SEO-friendly apps with MongoDB, Express, and more.',
     keywords: [
@@ -90,16 +90,20 @@ const schemaMarkup = {
 };
 
 const HomePage = () => {
-  return (
-    <>
-    <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
-        />
-      <NavBar />
-      <Home />
-    </>
-  )
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+            />
+            <NavBar />
+            <Home />
+
+            <footer className="mt-12 text-center py-8 text-sm text-gray-500">
+                © {new Date().getFullYear()} Kunal Shroff — Built with Next.js & Tailwind CSS
+            </footer>
+        </>
+    )
 }
 
 export default HomePage

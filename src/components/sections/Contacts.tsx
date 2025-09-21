@@ -15,7 +15,7 @@ const Contacts = () => {
             <h2 className="text-2xl font-bold">Let’s Work Together</h2>
             <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Reach out on any of these</p>
     
-            <div className="mt-6 flex flex-wrap gap-4 items-center justify-center">
+            <div className="mt-6 flex flex-wrap gap-4 items-center">
               <a href={SOCIAL.instagram} target="_blank" rel="noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700">
                 <Instagram /> <span className="hidden sm:inline">Instagram</span>
               </a>

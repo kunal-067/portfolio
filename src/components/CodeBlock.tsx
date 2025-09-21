@@ -2,9 +2,12 @@
 import React, { useState } from "react";
 import { Copy, CopyCheck } from "lucide-react";
 
-export const CodeBlock = ({ children: code }) => {
+export const CodeBlock:React.FC<{children:string, language?:string}> = ({ children: code, language }) => {
     const [copied, setCopied] = useState(false);
+
     const copyToClipboard = () => {
+        console.log('copying code in', language);
+        
         navigator.clipboard.writeText(code);
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);

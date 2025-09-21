@@ -10,11 +10,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'MongoDB for Beginners: Build Flexible Apps with NoSQL',
     description: 'Discover MongoDB’s power for modern apps with this beginner-friendly guide, including Node.js examples and real-world use cases.',
-    url: 'https://yourdomain.com/mongodb-blog',
+    url: 'https://kunalshroff.vercel.app/mongodb-blog',
     type: 'article',
     images: [
       {
-        url: 'https://yourdomain.com/images/mongodb-blog-og.jpg',
+        url: 'https://kunalshroff.vercel.app/images/mongodb-blog-og.jpg',
         width: 1200,
         height: 630,
         alt: 'MongoDB logo with code example',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'MongoDB for Beginners: Build Flexible Apps with NoSQL',
     description: 'Learn MongoDB with this beginner-friendly guide, featuring Node.js code examples and real-world use cases.',
-    images: ['https://yourdomain.com/images/mongodb-blog-og.jpg'],
+    images: ['https://kunalshroff.vercel.app/images/mongodb-blog-og.jpg'],
   },
 };
 
@@ -44,13 +44,13 @@ const articleSchema = {
     name: 'YourDomain',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://yourdomain.com/logo.png',
+      url: 'https://kunalshroff.vercel.app/logo.png',
     },
   },
   datePublished: '2025-09-21',
   dateModified: '2025-09-21',
-  image: 'https://yourdomain.com/images/mongodb-blog-og.jpg',
-  url: 'https://yourdomain.com/mongodb-blog',
+  image: 'https://kunalshroff.vercel.app/images/mongodb-blog-og.jpg',
+  url: 'https://kunalshroff.vercel.app/mongodb-blog',
 };
 
 export default function MongoDBBlog() {

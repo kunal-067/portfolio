@@ -139,24 +139,24 @@ export default function Home() {
             <Contacts/>
 
             {/* FAQ Section */}
-            <section id="faq" className="mb-10 space-y-4 max-w-6xl mx-auto px-4">
+            <section id="faq" className="mt-6 mb-10 space-y-4 max-w-6xl mx-auto px-6 md:px-8">
                 <h2 className="text-2xl font-bold mb-3">🔹 Frequently Asked Questions</h2>
                 <div className="space-y-4">
                     <div>
                         <h3 className="text-lg font-semibold">Why hire Kunal Shroff for web development?</h3>
-                        <p>
+                        <p className="text-[15px]">
                             I’m an expert in Next.js, MongoDB, and Express, delivering fast, SEO-friendly websites and apps tailored to your needs.
                         </p>
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold">What technologies do you use for e-commerce?</h3>
-                        <p>
+                        <p className="text-[15px]">
                             I specialize in Next.js for frontends, MongoDB for databases, and Express for APIs, ensuring scalable, high-performance e-commerce sites.
                         </p>
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold">Can you build microservices?</h3>
-                        <p>
+                        <p className="text-[15px]">
                             Yes! I use Express, RabbitMQ, and Node.js to build robust, scalable microservices architectures. See my <Link href="/projects/microservices" className="text-blue-600 hover:underline">projects</Link>.
                         </p>
                     </div>

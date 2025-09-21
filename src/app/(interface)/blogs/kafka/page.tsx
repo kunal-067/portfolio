@@ -69,7 +69,7 @@ export default function KafkaBlog() {
                             <strong>Producer:</strong> People sending letters → your apps sending events/messages
                         </li>
                         <li>
-                            <strong>Topic:</strong> Mailbox for a type of message → like "orders" or "notifications"
+                            <strong>Topic:</strong> Mailbox for a type of message → like {`"orders" or "notifications"`}
                         </li>
                         <li>
                             <strong>Consumer:</strong> Mail clerk reading letters → your apps processing events

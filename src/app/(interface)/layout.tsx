@@ -88,7 +88,9 @@ const schemaMarkup = {
 };
 
 
-const layout = ({ children }) => {
+const layout = ({ children }: {
+    children: React.ReactNode;
+}) => {
     return (
         <>
             {/* Schema Markup */}
