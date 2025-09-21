@@ -110,27 +110,20 @@ export default function Home() {
 
             {/* Hero Section */}
             <HeroWrapper/>
+             {/* About Section */}
+            <About/>
             {/* Skills Section */}
             <Skills/>
-
             {/* Projects Section */}
             <Projects/>
-
-            {/* About Section */}
-            <About/>
-
             {/* Experience Section */}
             <Exprience/>
-
             {/* Services Section */}
             <Services/>
-
             {/* Development Process Section */}
             <DevProcess/>
-
             {/* Achievements Section */}
             <Achivements/>
-
             {/* Testimonials Section */}
             <Testimonials/>
 

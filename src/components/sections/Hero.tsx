@@ -257,17 +257,9 @@ export function Hero2() {
                   <Database className="mr-1" size={12} /> MongoDB
                 </span>
               </div>
-              <p className="text-sm italic text-gray-600 dark:text-gray-300">
-                {`"Transformed our site with Next.js expertise!" - Jane Doe, CTO @WebInnovate`}
-              </p>
             </motion.div>
             </div>
-    
-
-            <div className="flex items-center gap-3 text-sm mt-2 text-slate-500 dark:text-slate-300">
-              <div className="h-2 w-2 rounded-full bg-cyan-500 shadow-[0_0_20px_rgba(6,182,212,0.26)] animate-pulse" />
-              Live demo · Animated terminal · Neon theme
-            </div>
+            
           </div>
 
           {/* Right Terminal */}
