@@ -70,7 +70,7 @@ const About = () => {
           transition={{ duration: 0.7, delay: 0.3 }}
         >
           <p className="italic text-gray-600 dark:text-gray-300 text-sm">
-            "Kunal transformed our project with his expertise in Next.js and Nest.js — the performance gains were incredible!"
+            {`"Kunal transformed our project with his expertise in Next.js and Nest.js — the performance gains were incredible!"`}
           </p>
           <p className="mt-2 text-xs text-gray-400">— Jane Doe, CTO @ WebInnovate</p>
         </motion.div>
