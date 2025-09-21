@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import HeroWrapper from "./heroWrapper";
 
-// Lazy-load non-critical components
-import Hero, { Hero2 } from '@/components/sections/Hero';
 const Skills = dynamic(() => import('@/components/sections/Skills'), { ssr: true });
 const Projects = dynamic(() => import('@/components/sections/Projects'), { ssr: true });
 const About = dynamic(() => import('@/components/sections/About'), { ssr: true });
@@ -110,9 +109,7 @@ export default function Home() {
             />
 
             {/* Hero Section */}
-            {/* <Hero/> */}
-            <Hero2/>
-
+            <HeroWrapper/>
             {/* Skills Section */}
             <Skills/>
 

@@ -71,9 +71,7 @@ const Hero = () => {
 export default Hero
 
 
-
 type Snippet = string;
-
 const CODE_SNIPPETS: Snippet[] = [
   `fetch('/api/auth')\n  .then(res => res.json())\n  .then(u => console.log(u));`,
   `const ai = async () => {\n  const r = await model.predict(input);\n  return r;\n}`,
@@ -81,7 +79,6 @@ const CODE_SNIPPETS: Snippet[] = [
   `for (let i=0;i<items.length;i++) {\n  process(items[i]);\n}`,
   `// deploy: production\nRUN npm ci && npm run build && pm2 restart all`,
 ];
-
 export function Hero2() {
   const [lines, setLines] = useState<string[]>([]);
   const [currentSnippet, setCurrentSnippet] = useState<number>(0);
@@ -365,12 +362,12 @@ export function Hero2() {
       <div className="pointer-events-none absolute z-20 left-3 top-8 opacity-80 animate-pulse">
         <div className="digit-stream text-[11px] -rotate-2 tracking-wider select-none">
           {Array.from({ length: 24 }).map((_, i) => (
-            <span key={i} className="block leading-tight text-slate-400 dark:text-slate-300">{Math.random() > 0.5 ? '0' : '1'}{Math.random() > 0.6 ? Math.floor(Math.random() * 9) : ''}</span>
+            <span key={i} className="block leading-tight h-full text-slate-400 dark:text-slate-300">{Math.random() > 0.5 ? '0' : '1'}{Math.random() > 0.6 ? Math.floor(Math.random() * 9) : ''}</span>
           ))}
         </div>
       </div>
 
-      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white/0 dark:from-black/0 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-full bg-gradient-to-t from-white/0 dark:from-black/0 to-transparent" />
     </section>
   );
 }
