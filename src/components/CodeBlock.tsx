@@ -135,7 +135,7 @@ const CodeBlockComp: React.FC<CodeBlockProps> = ({
                         customStyle={customStyle}
                         showLineNumbers
                         wrapLines={wrapLongLines}
-                        lineProps={lineNumber => lineHighlighter(lineNumber)}
+                        lineProps={(lineNumber: number) => lineHighlighter(lineNumber)}
                     >
                         {code.trim()}
                     </SyntaxHighlighter>
